@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Heather Tucker Research</title>
+<title>Heather M. Tucker</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap">
 <style>
 :root { --bg:#fbe5dc; --field:#f5b9a5; --surface:#fdf2ec; --fg:#142a78; --mark:#4a5320; --serif:"Newsreader",Georgia,serif; --sans:"Public Sans",Arial,sans-serif; }
@@ -12,16 +12,14 @@ body { margin:0; background:var(--bg); color:var(--fg); font-family:var(--serif)
 .wrap { max-width:900px; margin:0 auto; padding:0 16px; }
 header, footer { background:var(--field); }
 header .wrap { padding-top:56px; padding-bottom:52px; display:grid; grid-template-columns:1fr auto; gap:36px; align-items:center; }
-.affil { font-family:var(--sans); font-size:.76rem; letter-spacing:.09em; text-transform:uppercase; color:var(--mark); }
 h1 { font-weight:400; font-size:clamp(2.3rem,6vw,3.6rem); line-height:1.05; margin:12px 0 14px; }
+h1::before { content:""; display:block; width:96px; height:8px; background:var(--mark); margin-bottom:20px; }
 .role { font-style:italic; font-size:1.18rem; margin:0; max-width:58ch; }
-.chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
-.chips span { font-family:var(--sans); font-size:.78rem; font-weight:500; padding:5px 11px; border:1px solid var(--mark); color:var(--mark); }
 .portrait { width:230px; aspect-ratio:4/5; background:var(--fg); box-shadow:20px 20px 0 var(--mark); margin:0 20px 20px 0; }
 .portrait img { width:100%; height:100%; object-fit:cover; object-position:50% 28%; display:block; }
 section { display:grid; grid-template-columns:170px 1fr; gap:28px; padding:52px 0; border-top:1px solid var(--mark); }
 h2 { font-weight:500; font-size:1.7rem; line-height:1.15; margin:0; color:var(--mark); }
-h2::after { content:""; display:block; width:22px; height:22px; margin-top:14px; background:var(--mark); }
+h3 { font-family:var(--sans); font-size:.8rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--mark); margin:8px 0 0; }
 .body { display:grid; gap:16px; min-width:0; }
 .body p { margin:0; max-width:64ch; }
 .lead { font-size:1.55rem; line-height:1.35; }
@@ -55,21 +53,26 @@ footer .wrap { font-family:var(--sans); font-size:.8rem; padding-top:18px; paddi
 <header>
   <div class="wrap">
     <div>
-      <div class="affil">Center for AIDS Prevention Studies · University of California, San Francisco</div>
-      <h1>Heather Tucker, PhD, MPH, MA</h1>
-      <p class="role">Feminist and medical anthropologist working across global and public health on HIV, sexual and reproductive health and rights, and climate and health, whose ethnographic and participatory research on stigma and structural inequity is increasingly oriented toward the development of interventions.</p>
-      <div class="chips"><span>HIV prevention and care</span><span>SRHR</span><span>Intervention development</span><span>Participatory methods</span><span>Climate and health</span></div>
+      <h1>Heather M. Tucker, PhD, MPH, MA</h1>
+      <p class="role">Feminist and medical anthropologist working across global and public health on HIV, sexual and reproductive health and rights, and climate and health.</p>
     </div>
-    <div class="portrait"><img src="photo.jpg" alt="Heather Tucker"></div>
+    <div class="portrait"><img src="photo.jpg" alt="Heather M. Tucker"></div>
   </div>
 </header>
 
 <main class="wrap">
   <section>
+    <h2>About</h2>
+    <div class="body">
+      <p>I am a postdoctoral fellow in the Training in AIDS Prevention Studies program at the UCSF Center for AIDS Prevention Studies. I hold a PhD in Gender Studies with a focus in sociocultural anthropology from Central European University, an MPH in Epidemiology from UC Berkeley, and an MA in Gender and International Development from the Institute of Development Studies at the University of Sussex. Before UCSF I was a postdoctoral fellow at the University of Michigan Center for Global Health Equity.</p>
+    </div>
+  </section>
+
+  <section>
     <h2>Research</h2>
     <div class="body">
-      <p class="lead">My research centers the lived experiences of people facing <em>intersecting forms of stigma</em>, and the ways communities navigate it through resistance, resilience, community building, and the making of space for one another.</p>
-      <p>My work focuses on intervention development, using participatory methods to design responses with and for the people most affected, grounded in an understanding of how structural conditions shape HIV prevention and care, sexual and reproductive health, mental health, and experiences of violence. Over more than a decade I have carried out qualitative and ethnographic research with people living with and vulnerable to HIV, much of it in sub Saharan Africa, and my recent work extends these questions to climate and health, tracing how extreme weather compounds the conditions people already live within.</p>
+      <p class="lead">My research attends to the lived experiences of people navigating <em>intersecting forms of stigma</em>, including the ways communities respond through resistance, resilience, community building, and the making of space for one another.</p>
+      <p>Over more than a decade I have brought ethnographic, qualitative, and, where the work calls for it, participatory methods to questions of how structural conditions shape HIV prevention and care, sexual and reproductive health, mental health, and experiences of violence, much of it alongside people living with and vulnerable to HIV in sub Saharan Africa. My more recent work carries these questions into climate and health, tracing how extreme weather settles onto the conditions people already live within, and it increasingly draws me toward the development of interventions.</p>
     </div>
   </section>
 
@@ -82,7 +85,7 @@ footer .wrap { font-family:var(--sans); font-size:.8rem; padding-top:18px; paddi
         <li><strong>Mental health and community led intervention</strong><span>Adapting, implementing, and evaluating peer delivered mental health support with community partners in Kenya.</span></li>
         <li><strong>Self administered and long acting prevention</strong><span>How tools such as PrEP, the ring, implants, and self testing can widen access to HIV and STI prevention and care, and for whom.</span></li>
         <li><strong>Climate, health, and bodily autonomy</strong><span>How extreme weather, from floods and typhoons to drought and heat, reshapes HIV care, mental health, and people's capacity to decide about their own bodies, including collaborative work at UCSF.</span></li>
-        <li><strong>Participatory and feminist methods</strong><span>Feminist participatory research, ethnography, and digital ethnography as tools for building interventions alongside communities.</span></li>
+        <li><strong>Participatory and feminist methods</strong><span>Feminist participatory research, ethnography, and digital ethnography as ways of understanding health alongside communities.</span></li>
       </ul>
     </div>
   </section>
@@ -90,13 +93,27 @@ footer .wrap { font-family:var(--sans); font-size:.8rem; padding-top:18px; paddi
   <section>
     <h2>Publications</h2>
     <div class="body">
+      <h3>Journal articles</h3>
       <ol class="pubs">
+        <li><b>Tucker HM</b>, Odhiambo R, Lacombe-Duncan A, Mbanda A, Jadwin-Cakmak L, Madegwa N, Ogonyo MA, Harper GW. WEMA Womxn: findings from a pilot study of a peer-based mental health intervention designed with and for sexual and gender minority persons assigned female at birth in Kisumu, Kenya. <i>Health &amp; Social Care in the Community</i>. In press.</li>
         <li><b>Tucker HM</b>, Awuor Ochieng DC. Why feminist participatory methods matter for global health research in Sub-Saharan Africa. <i>Global Challenges</i>. 2026;10(1):e00066. <a href="https://doi.org/10.1002/gch2.202500066">doi:10.1002/gch2.202500066</a></li>
         <li><b>Tucker HM</b>, Awuor DC, Mbanda A, Odhiambo R, Porter S, Igonya E. Heterosexual ‘situationships’ and HIV exposure for sexual and gender minority persons assigned female at birth in the Western Kenyan context. <i>Culture, Health &amp; Sexuality</i>. 2025;28(9):1025–1036. <a href="https://doi.org/10.1080/13691058.2025.2515199">doi:10.1080/13691058.2025.2515199</a></li>
         <li><b>Tucker HM</b>, Mbanda A, Odhiambo R, Harper GW. US right-wing, pro-family movements in East Africa: furthering legislation that fuels health inequities among sexual and gender minority persons assigned female sex at birth in Western Kenya. <i>American Journal of Public Health</i>. 2025;115(8):1264–1270. <a href="https://doi.org/10.2105/AJPH.2025.308099">doi:10.2105/AJPH.2025.308099</a></li>
+        <li><b>Tucker HM</b>. Demonizing the priestess and the lesbian: the social violence of Presbyterian postcolonial anxieties and witch finding in Southern Ghana. <i>Journal of Africana Religions</i>. 2025;13(1):113–121.</li>
+        <li>Moore DM, Lewis KA, Jauregui JC, <b>Tucker HM</b>, Obwanda V, Onyango DP, et al. A consequence of tradition: the influence of heteronormativity on the lived realities of gay and bisexual men in Kenya. <i>Psychology &amp; Sexuality</i>. 2025:1–22.</li>
         <li>McGonigle E, Johnson MM, <b>Tucker H</b>, et al. Electronic dose monitoring feedback (EMF) with youth living with HIV: qualitative exploration of reactions to viewing dosing calendars. <i>AIDS and Behavior</i>. 2025;29(12):3830–3837. <a href="https://doi.org/10.1007/s10461-025-04820-w">doi:10.1007/s10461-025-04820-w</a></li>
         <li>Harper GW, Hong C, Jauregui JC, Odhiambo EO, Jadwin-Cakmak L, Olango K, Rivet Amico K, <b>Tucker HM</b>, et al. Proximal and distal minority stressors and mental health among young gay and bisexual men and other men who have sex with men (GBMSM) in Kisumu, Kenya. <i>American Journal of Community Psychology</i>. 2024;74(3–4):249–261. <a href="https://doi.org/10.1002/ajcp.12767">doi:10.1002/ajcp.12767</a></li>
+        <li><b>Tucker HM</b>, Odhiambo R, Jadwin-Cakmak L, Mbanda A, Harper GW. Problematizing empowerment in global health: disrupting universalisms and challenging power inequities. <i>World Medical &amp; Health Policy</i>. 2024;16(4):759–766.</li>
         <li><b>Tucker HM</b>, Odhiambo R, Jadwin-Cakmak L, Mbanda A, Lacombe-Duncan A, Rucah C, Ubong IA, Akoth Ouko C, Odero W, Harper GW. “Empowerment for Us by Us (E4UBU)”: developing a model of empowerment using feminist participatory methods with LBQT+ persons assigned female at birth in Western Kenya. <i>International Journal of Environmental Research and Public Health</i>. 2024;21(7):948. <a href="https://doi.org/10.3390/ijerph21070948">doi:10.3390/ijerph21070948</a></li>
+      </ol>
+      <h3>Book chapters</h3>
+      <ol class="pubs">
+        <li><b>Tucker H</b>. Whiteness as friction: vulnerability as a method in transnational research. In: <i>Pluriversal Conversations on Transnational Feminisms</i>. 2023:72–76.</li>
+        <li><b>Tucker H</b>. A man with boundaries: masculinities, technology, and counterpublics in urban Accra. In: <i>Routledge Handbook of Queer African Studies</i>. Routledge; 2019:158–166.</li>
+      </ol>
+      <h3>Other writing</h3>
+      <ol class="pubs">
+        <li><b>Tucker H</b>. Neoliberalism and regimes of life and death: a book review of <i>Queer Necropolitics</i>, edited by Jin Haritaworn, Adi Kuntsman, and Sylvia Posocco. <i>Graduate Journal of Social Science</i>. 2016;12(1).</li>
       </ol>
     </div>
   </section>
@@ -112,30 +129,4 @@ footer .wrap { font-family:var(--sans); font-size:.8rem; padding-top:18px; paddi
         <li><span class="status">In preparation</span><strong>U.S. right wing transnational policies and health outcomes, a preliminary scoping review</strong></li>
         <li><span class="status">In preparation</span><strong>“No matter what typhoon comes”: resilience and vulnerability among people living with HIV during extreme weather in the Philippines</strong></li>
         <li><span class="status">In preparation</span><strong>Extreme weather and mental health among people living with HIV in the Philippines</strong></li>
-        <li><span class="status">In preparation</span><strong>Digital ethnography, privacy, and research with criminalized communities</strong><span class="note">A methods article drawing on WhatsApp ethnography in Accra.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>About</h2>
-    <div class="body">
-      <p>I am a postdoctoral fellow in the Training in AIDS Prevention Studies program at the UCSF Center for AIDS Prevention Studies. I hold a PhD in Gender Studies with a focus in sociocultural anthropology from Central European University, an MPH in Epidemiology from UC Berkeley, and an MA in Gender and International Development from the Institute of Development Studies at the University of Sussex. Before UCSF I was a postdoctoral fellow at the University of Michigan Center for Global Health Equity.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="body">
-      <div class="links">
-        <a href="mailto:heather.tucker@ucsf.edu">heather.tucker@ucsf.edu</a>
-        <a href="https://orcid.org/0000-0003-2565-1996">ORCID 0000-0003-2565-1996</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer><div class="wrap">Heather Tucker · San Francisco Bay Area</div></footer>
-
-</body>
-</html>
+        <li><span class="status">In
